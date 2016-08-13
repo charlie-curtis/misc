@@ -1,4 +1,4 @@
-h1. Introduction
+Introduction
 
 twitch_stats collects the viewers for a particular game and records this data. It can be used to visualize long term trends.
 
