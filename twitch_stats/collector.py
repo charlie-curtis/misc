@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/python3
 import re
 import time 
 import os
 from bs4 import BeautifulSoup as bs
 from urllib import request
-
-dir = os.getcwd()
+dir = os.path.dirname(os.path.realpath(__file__))
 print(dir)
 url = "https://www.twitch.tv/"
 response = request.urlopen(url)
