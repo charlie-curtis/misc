@@ -30,6 +30,9 @@ for game in games:
 		name = remove_underscores(game)
 	)
 	data.append(trace)
-
-py.offline.plot(data, filename="statistics.html")
+layout = go.Layout(title="Twitch viewers by game",
+	xaxis=dict(title="Time"),
+	yaxis=dict(title="Viewers"))
+figure = go.Figure(data = data, layout=layout)
+py.offline.plot(figure, filename="statistics.html")
 
